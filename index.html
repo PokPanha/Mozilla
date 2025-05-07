@@ -13,49 +13,49 @@
             --medium-gray: #e0e0e0;
             --dark-gray: #4a4a4f;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--light-gray);
             color: var(--text-color);
             line-height: 1.6;
         }
-        
+
         .container {
-            max-width: 1000px;
+            max-width: 1200px; /* Increased max-width for larger screens */
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             text-align: center;
-            padding: 40px 0;
+            padding: 40px 20px; /* Added horizontal padding for smaller screens */
         }
-        
+
         .logo {
-            width: 120px;
+            width: 100px; /* Adjusted logo size for better responsiveness */
             height: auto;
             margin-bottom: 20px;
         }
-        
+
         h1 {
             color: var(--secondary-color);
             margin-bottom: 10px;
-            font-size: 2.2rem;
+            font-size: 2rem; /* Adjusted font size for better responsiveness */
         }
-        
+
         .subtitle {
             color: var(--dark-gray);
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Adjusted font size for better responsiveness */
             margin-bottom: 30px;
         }
-        
+
         .download-card {
             background: white;
             border-radius: 8px;
@@ -64,26 +64,26 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        
+
         .version-info {
             margin-bottom: 20px;
         }
-        
+
         .version {
             font-weight: bold;
             color: var(--secondary-color);
         }
-        
+
         .file-size {
             color: var(--dark-gray);
         }
-        
+
         .download-btn {
             background-color: var(--primary-color);
             color: white;
             border: none;
             padding: 15px 30px;
-            font-size: 1.1rem;
+            font-size: 1rem; /* Adjusted font size for better responsiveness */
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s;
@@ -91,15 +91,15 @@
             margin: 15px 0;
             text-decoration: none;
         }
-        
+
         .download-btn:hover {
             background-color: var(--secondary-color);
         }
-        
+
         .download-btn i {
             margin-right: 8px;
         }
-        
+
         .info-section {
             background: white;
             border-radius: 8px;
@@ -107,45 +107,45 @@
             padding: 30px;
             margin-bottom: 30px;
         }
-        
+
         h2 {
             color: var(--secondary-color);
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            font-size: 1.3rem; /* Adjusted font size for better responsiveness */
         }
-        
+
         .features {
             list-style-type: none;
         }
-        
+
         .features li {
             padding: 10px 0;
             border-bottom: 1px solid var(--medium-gray);
             display: flex;
             align-items: center;
         }
-        
+
         .features li:last-child {
             border-bottom: none;
         }
-        
+
         .features i {
             color: var(--primary-color);
             margin-right: 10px;
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Adjusted font size for better responsiveness */
         }
-        
+
         .system-requirements {
             margin-top: 20px;
         }
-        
+
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px; /* Added horizontal padding for smaller screens */
             color: var(--dark-gray);
-            font-size: 0.9rem;
+            font-size: 0.8rem; /* Adjusted font size for better responsiveness */
         }
-        
+
         .progress-container {
             width: 100%;
             background-color: var(--medium-gray);
@@ -153,7 +153,7 @@
             margin: 20px 0;
             display: none;
         }
-        
+
         .progress-bar {
             width: 0%;
             height: 20px;
@@ -164,36 +164,102 @@
             color: white;
             transition: width 0.3s;
         }
-        .img-caption .img-caption img{
-            width: 100%;;
-        }
-        .gallery-item{
+
+        .gallery-item {
             width: 100%;
-            margin-bottom: 60px;
+            margin-bottom: 30px; /* Adjusted margin for better spacing on smaller screens */
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            header {
-                padding: 20px 0;
-            }
-            
+
+        .gallery-item h2 {
+            font-size: 1.2rem; /* Adjusted font size for better responsiveness */
+            margin-bottom: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block; /* Prevent extra space below image */
+            border-radius: 4px; /* Optional: add some border radius to images */
+        }
+
+        /* Media Queries for Responsiveness */
+
+        /* Small screens (phones, less than 600px wide) */
+        @media (max-width: 599px) {
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
-            
-            .download-card, .info-section {
+            .subtitle {
+                font-size: 1rem;
+            }
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            .info-section {
                 padding: 20px;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .features li {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Medium screens (tablets, 600px to 991px wide) */
+        @media (min-width: 600px) and (max-width: 991px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .download-card, .info-section {
+                padding: 25px;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .features li {
+                font-size: 1rem;
+            }
+            .logo {
+                width: 110px;
+            }
+        }
+
+        /* Large screens (desktops, 992px and up) - These styles are mostly covered by the initial definitions */
+        @media (min-width: 992px) {
+            .container {
+                padding: 30px;
+            }
+            header {
+                padding: 60px 0;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .download-card, .info-section {
+                padding: 30px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .features li {
+                font-size: 1.1rem;
+            }
+            .logo {
+                width: 120px;
             }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   
+</head>
 <body>
 
-    
     <div class="container">
         <header>
             <img src="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png" alt="Thunderbird Logo" class="logo">
@@ -201,61 +267,58 @@
             <p class="subtitle">Free email application with easy setup and privacy features</p>
         </header>
 
-     
         <div class="gallery-item">
-            <h2 class="img-caption">1.Click start window and search firefox</h2>
+            <h2>1.Click start window and search firefox</h2>
             <img src="img1test.png" alt="New image" class="gallery-img">
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">2.Open google.com 7 type Molzila</h2>
+            <h2>2.Open google.com 7 type Molzila</h2>
             <img src="img2.png" alt="New image" class="gallery-img">
-         
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">3.Open officail website : www.thunderbird.net</h2>
+            <h2>3.Open officail website : www.thunderbird.net</h2>
             <img src="img3.png" alt="New image" class="gallery-img">
-         
         </div>
         <div class="gallery-item">
-            <h2 class="img-caption">4.Click on free download button</h2>
+            <h2>4.Click on free download button</h2>
             <img src="img4.png" alt="New image" class="gallery-img">
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">5.Click on save file</h2>
+            <h2>5.Click on save file</h2>
             <img src="img5.png" alt="New image" class="gallery-img">
         </div>
 
 
         <div class="gallery-item">
-            <h2 class="img-caption">6.Thunderbird setup file is being downloaded</h2>
+            <h2>6.Thunderbird setup file is being downloaded</h2>
             <img src="img6.png" alt="New image" class="gallery-img">
         </div>
-        
+
         <div class="gallery-item">
-            <h2 class="img-caption">7.Click and open .exe file</h2>
+            <h2>7.Click and open .exe file</h2>
             <img src="img7.png" alt="New image" class="gallery-img">
         </div>
-        
+
         <div class="gallery-item">
-            <h2 class="img-caption">8.Click on Run</h2>
+            <h2>8.Click on Run</h2>
             <img src="img8.png" alt="New image" class="gallery-img">
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">9.Click on next, next & install</h2>
+            <h2>9.Click on next, next & install</h2>
             <img src="img9.png" alt="New image" class="gallery-img">
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">10.Click on finish</h2>
+            <h2>10.Click on finish</h2>
             <img src="img10.png" alt="New image" class="gallery-img">
         </div>
 
         <div class="gallery-item">
-            <h2 class="img-caption">11.Thunderbird has been installed successfully and ready to use</h2>
+            <h2>11.Thunderbird has been installed successfully and ready to use</h2>
             <img src="img11.png" alt="New image" class="gallery-img">
         </div>
 
@@ -266,23 +329,23 @@
                 <p class="version">Thunderbird 115.0</p>
                 <p class="file-size">(File size: ~65 MB)</p>
             </div>
-            
+
             <div class="progress-container" id="progressContainer">
                 <div class="progress-bar" id="progressBar">0%</div>
             </div>
-            
+
             <a href="#" class="download-btn" id="downloadBtn">
                 <i class="fas fa-download"></i> Download Now
             </a>
-            
+
             <p>Windows 7/8/10/11 | 64-bit</p>
         </div>
-        
+
         <div class="info-section">
             <h2>About the ZIP Version</h2>
             <p>The ZIP version of Thunderbird is a portable edition that doesn't require installation. Simply extract the contents to your preferred location and run Thunderbird directly. This is ideal for USB drives or when you don't have administrative privileges.</p>
         </div>
-        
+
         <div class="info-section">
             <h2>Key Features</h2>
             <ul class="features">
@@ -294,7 +357,7 @@
                 <li><i class="fas fa-lock"></i> Strong privacy and encryption options</li>
             </ul>
         </div>
-        
+
         <div class="info-section">
             <h2>System Requirements</h2>
             <div class="system-requirements">
@@ -304,7 +367,7 @@
                 <p><strong>Hard Disk Space:</strong> 200 MB free space</p>
             </div>
         </div>
-        
+
         <footer>
             <p>Mozilla Thunderbird is open-source software developed by the Mozilla Foundation.</p>
             <p>&copy; <span id="year"></span> Mozilla. All rights reserved.</p>
@@ -315,18 +378,18 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Set current year in footer
             document.getElementById('year').textContent = new Date().getFullYear();
-            
+
             // Simulate download progress
             document.getElementById('downloadBtn').addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 const progressContainer = document.getElementById('progressContainer');
                 const progressBar = document.getElementById('progressBar');
-                
+
                 // Show progress bar
                 progressContainer.style.display = 'block';
                 this.style.display = 'none';
-                
+
                 // Simulate download progress
                 let progress = 0;
                 const interval = setInterval(() => {
@@ -334,14 +397,14 @@
                     if (progress >= 100) {
                         progress = 100;
                         clearInterval(interval);
-                        
+
                         // Change button to "Launch" after download completes
                         setTimeout(() => {
                             const downloadBtn = document.getElementById('downloadBtn');
                             downloadBtn.innerHTML = '<i class="fas fa-rocket"></i> Launch Thunderbird';
                             downloadBtn.style.display = 'inline-block';
                             progressContainer.style.display = 'none';
-                            
+
                             // Change the behavior to "launch" (in a real scenario, this would run the executable)
                             downloadBtn.addEventListener('click', function(e) {
                                 e.preventDefault();
@@ -349,7 +412,7 @@
                             });
                         }, 500);
                     }
-                    
+
                     progressBar.style.width = progress + '%';
                     progressBar.textContent = Math.round(progress) + '%';
                 }, 200);
