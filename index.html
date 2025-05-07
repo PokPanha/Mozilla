@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Mozilla Thunderbird (ZIP Version)</title>
+    <style>
+        :root {
+            --primary-color: #0a84ff;
+            --secondary-color: #003eaa;
+            --text-color: #363959;
+            --light-gray: #f9f9fa;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #4a4a4f;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        
+        .subtitle {
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .download-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .version-info {
+            margin-bottom: 20px;
+        }
+        
+        .version {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .file-size {
+            color: var(--dark-gray);
+        }
+        
+        .download-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .features {
+            list-style-type: none;
+        }
+        
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--medium-gray);
+            display: flex;
+            align-items: center;
+        }
+        
+        .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .features i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .system-requirements {
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+        
+        .progress-container {
+            width: 100%;
+            background-color: var(--medium-gray);
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            transition: width 0.3s;
+        }
+        .img-caption .img-caption img{
+            width: 100%;;
+        }
+        .gallery-item{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .download-card, .info-section {
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+<body>
+
+    
+    <div class="container">
+        <header>
+            <img src="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png" alt="Thunderbird Logo" class="logo">
+            <h1>Mozilla Thunderbird</h1>
+            <p class="subtitle">Free email application with easy setup and privacy features</p>
+        </header>
+
+     
+        <div class="gallery-item">
+            <h2 class="img-caption">1.Click start window and search firefox</h2>
+            <img src="img1test.png" alt="New image" class="gallery-img">
+            <div class="img-caption">New feature</div>
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">2.Open google.com 7 type Molzila</h2>
+            <img src="img2.png" alt="New image" class="gallery-img">
+         
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">3.Open officail website : www.thunderbird.net</h2>
+            <img src="img3.png" alt="New image" class="gallery-img">
+         
+        </div>
+        <div class="gallery-item">
+            <h2 class="img-caption">4.Click on free download button</h2>
+            <img src="img4.png" alt="New image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">5.Click on save file</h2>
+            <img src="img5.png" alt="New image" class="gallery-img">
+        </div>
+
+
+        <div class="gallery-item">
+            <h2 class="img-caption">6.Thunderbird setup file is being downloaded</h2>
+            <img src="img6.png" alt="New image" class="gallery-img">
+        </div>
+        
+        <div class="gallery-item">
+            <h2 class="img-caption">7.Click and open .exe file</h2>
+            <img src="img7.png" alt="New image" class="gallery-img">
+        </div>
+        
+        <div class="gallery-item">
+            <h2 class="img-caption">8.Click on Run</h2>
+            <img src="img8.png" alt="New image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">9.Click on next, next & install</h2>
+            <img src="img9.png" alt="New image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">10.Click on finish</h2>
+            <img src="img10.png" alt="New image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="img-caption">11.Thunderbird has been installed successfully and ready to use</h2>
+            <img src="img11.png" alt="New image" class="gallery-img">
+        </div>
+
+
+        <div class="download-card">
+            <div class="version-info">
+                <p>Download the portable ZIP version of</p>
+                <p class="version">Thunderbird 115.0</p>
+                <p class="file-size">(File size: ~65 MB)</p>
+            </div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar">0%</div>
+            </div>
+            
+            <a href="#" class="download-btn" id="downloadBtn">
+                <i class="fas fa-download"></i> Download Now
+            </a>
+            
+            <p>Windows 7/8/10/11 | 64-bit</p>
+        </div>
+        
+        <div class="info-section">
+            <h2>About the ZIP Version</h2>
+            <p>The ZIP version of Thunderbird is a portable edition that doesn't require installation. Simply extract the contents to your preferred location and run Thunderbird directly. This is ideal for USB drives or when you don't have administrative privileges.</p>
+        </div>
+        
+        <div class="info-section">
+            <h2>Key Features</h2>
+            <ul class="features">
+                <li><i class="fas fa-envelope"></i> Unified inbox for multiple accounts</li>
+                <li><i class="fas fa-shield-alt"></i> Built-in phishing and spam protection</li>
+                <li><i class="fas fa-search"></i> Quick search and advanced filtering</li>
+                <li><i class="fas fa-calendar-alt"></i> Integrated calendar and task management</li>
+                <li><i class="fas fa-plug"></i> Extensive add-on ecosystem</li>
+                <li><i class="fas fa-lock"></i> Strong privacy and encryption options</li>
+            </ul>
+        </div>
+        
+        <div class="info-section">
+            <h2>System Requirements</h2>
+            <div class="system-requirements">
+                <p><strong>Operating System:</strong> Windows 7/8/10/11 (64-bit)</p>
+                <p><strong>Processor:</strong> Pentium 4 or newer with SSE2 support</p>
+                <p><strong>Memory:</strong> 512 MB RAM (2 GB recommended)</p>
+                <p><strong>Hard Disk Space:</strong> 200 MB free space</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Mozilla Thunderbird is open-source software developed by the Mozilla Foundation.</p>
+            <p>&copy; <span id="year"></span> Mozilla. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // Simulate download progress
+            document.getElementById('downloadBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const progressContainer = document.getElementById('progressContainer');
+                const progressBar = document.getElementById('progressBar');
+                
+                // Show progress bar
+                progressContainer.style.display = 'block';
+                this.style.display = 'none';
+                
+                // Simulate download progress
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += Math.random() * 10;
+                    if (progress >= 100) {
+                        progress = 100;
+                        clearInterval(interval);
+                        
+                        // Change button to "Launch" after download completes
+                        setTimeout(() => {
+                            const downloadBtn = document.getElementById('downloadBtn');
+                            downloadBtn.innerHTML = '<i class="fas fa-rocket"></i> Launch Thunderbird';
+                            downloadBtn.style.display = 'inline-block';
+                            progressContainer.style.display = 'none';
+                            
+                            // Change the behavior to "launch" (in a real scenario, this would run the executable)
+                            downloadBtn.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                alert('In a real implementation, this would launch Thunderbird from the extracted ZIP file.');
+                            });
+                        }, 500);
+                    }
+                    
+                    progressBar.style.width = progress + '%';
+                    progressBar.textContent = Math.round(progress) + '%';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
